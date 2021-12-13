@@ -1,0 +1,62 @@
+<!-- header开始 -->
+<van-tabs active="{{ active }}" bind:change="onChange">
+  <!-- 营地信息开始 -->
+  <van-tab title="营地信息">
+  <!-- 搜索区 -->
+ <van-search
+  value="{{ value }}"
+  placeholder="请输入关键词 如大连"
+  shape="round"
+  use-action-slot
+  bindtap="gosearch"
+ >
+  <view slot="action" bindtap="gosearch" >搜索</view>
+  </van-search>
+    <!-- 导航 -->
+    <van-dropdown-menu>
+      <van-dropdown-item value="{{value1}}" options="{{option1}}" bindchange="changeCity" />
+      <van-dropdown-item value="{{ value2 }}" options="{{ option2 }}"/>
+      <van-dropdown-item value="{{ value3 }}" options="{{ option3 }}"  bindchange="changeDistance"   />
+      <van-dropdown-item value="{{ value4 }}" options="{{ option4 }}" />
+      <van-dropdown-item value="{{ value5 }}" options="{{ option5 }}" />
+    </van-dropdown-menu>
+    <!-- header结束 -->
+    <!-- main开始 -->
+    <view wx:for="{{infolist}}" wx:key="_id" bindtap="goinfo" data-idp="{{item}}" class="box-body">
+        <view class="photo">
+          <a href="">
+            <image class="camp" src="{{item.img}}"></image>
+          </a>
+        </view>
+        <view class="info">
+          <view class="info1">{{item.title}}</view>
+          <view class="info2">{{item.content}}</view>
+          <text class="info3">{{item.contain1}}</text> <text class="info3">{{item.contain2}}</text>
+          <view class="info4">{{item.mark}}</view>
+        </view>
+    </view>
+
+    <!-- main结束 -->
+  </van-tab>
+  <!-- 营地信息结束 -->
+
+  <!-- 地图开始 -->
+  <van-tab title="地图">
+
+    <!-- 搜索区 -->
+    <van-search
+  value="{{ value }}"
+  placeholder="请输入搜索关键词"
+  shape="round"
+  use-action-slot
+  bindtap="gosearch"
+ >
+  <view slot="action" bindtap="gosearch" >搜索</view>
+ </van-search>
+    <!-- 地图结束 -->
+    <map name="" latitude="{{markers[0].latitude}}" longitude="{{markers[0].longitude}}" style="width:100%;height:700px"
+      scale="12" markers="{{markers}}" bindtap="moveCenter"  bindmarkertap="gocamp"  data-idp="{{item}}"></map>
+  </van-tab>
+  <!-- 地图结束 -->
+
+</van-tabs>

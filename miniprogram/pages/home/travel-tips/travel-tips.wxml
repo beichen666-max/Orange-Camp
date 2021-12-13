@@ -1,0 +1,26 @@
+<!--miniprogram/pages/home/travel-tips/travel-tips.wxml-->
+<view>
+   <a href="">
+      <image class="back" bindtap="goindex" src="/images4/back.png"></image>
+   </a>
+   <view>
+   <text class="info">旅行攻略</text>
+   </view>
+</view>
+<!-- main开始 -->
+<view wx:for="{{travellist}}" wx:key="id" class="box-body" bindtap="goinfo" data-idp="{{item}}" >
+        <view class="photo">
+          <a href="">
+            <image class="camp" src="{{item.img}}"></image>
+          </a>
+        </view>
+        <view class="infolist">
+          <view class="info1">{{item.title}}</view>
+          <view class="info2">{{item.address}}</view>
+          <text class="info3">{{item.contain1}}</text>
+          <view class="bottom">
+          <view class="info4">{{item.contain2}}</view>
+          <view class="info5">{{item.mark}}</view>
+         </view>
+        </view>
+</view>

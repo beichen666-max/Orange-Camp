@@ -1,0 +1,23 @@
+/* miniprogram/pages/my/my-order/my-order.wxss */
+/* header开始 */
+.back{
+   float: left;
+   width: 20px;
+   height: 20px;
+   margin: 8px;
+}
+.info{
+   display: flex;
+   align-self: center;
+   margin-top: 8px;
+   
+}
+
+.wait{
+   color: #868686;
+   position: relative;
+   bottom: -450rpx;
+   right: -200rpx;
+   font-size: 40rpx;
+}
+/* header结束 */

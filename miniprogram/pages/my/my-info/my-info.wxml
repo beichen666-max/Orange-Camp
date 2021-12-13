@@ -1,0 +1,46 @@
+<!--miniprogram/pages/my/my-info/my-info.wxml-->
+<!-- header开始 -->
+<view>
+   <a href="">
+      <image class="back" bindtap="gomy" src="/images4/back.png"></image>
+   </a>
+   <view>
+   <text class="info">我的信息</text>
+   </view>
+   <view class="note">可直接修改信息</view>
+</view>
+<!-- header结束 -->
+
+<!-- main开始 -->
+<van-cell-group>
+  <van-field
+    value="{{ username3 }}"
+    label="昵称"
+    placeholder="请输入昵称"
+    input-align="right"
+  />
+  <van-field
+    value="{{ username3 }}"
+    label="QQ号"
+    placeholder="请输入QQ号"
+    input-align="right"
+  />
+  <van-field
+    value="{{ username3 }}"
+    label="手机号"
+    placeholder="请输入手机号"
+    input-align="right"
+  />
+</van-cell-group>
+<!-- main结束 -->
+<!-- 按钮开始 -->
+<view class="button">
+   <van-button color="linear-gradient(to right, #ec0606, #ec6d06)">
+   保存修改
+   </van-button>
+</view>
+<!-- 按钮结束 -->
+
+
+
+

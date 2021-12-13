@@ -1,0 +1,27 @@
+<!--miniprogram/pages/my/my-release/my-release.wxml-->
+<!-- header开始 -->
+<view>
+   <a href="">
+      <image class="back" bindtap="gomy" src="/images4/back.png"></image>
+   </a>
+   <view>
+   <text class="info">我的发布</text>
+   </view>
+</view>
+
+<view>
+   <view wx:for="{{publishlist}}" wx:key="_id" class="box-body">
+        <view class="photo">
+          <a href="">
+            <image class="camp" src="{{item.img}}"></image>
+          </a>
+        </view>
+        <view class="infolist">
+          <view class="info1">{{item.title}}</view>
+          <view class="info2">{{item.content}}</view>
+          <text class="info3">{{item.contain1}}</text> <text class="info3">{{item.contain2}}</text>
+          <view class="info4">{{item.tel}}</view>
+         </view>
+    </view>
+</view>
+<!-- header结束 -->

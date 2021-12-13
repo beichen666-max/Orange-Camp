@@ -1,0 +1,9 @@
+/* miniprogram/pages/home/travel-info/travel-info.wxss */
+.info1{
+   font-size: 50rpx;
+   margin-left: 15rpx;
+}
+.info2{
+   font-size: 30rpx;
+   margin: 0 15rpx;
+}

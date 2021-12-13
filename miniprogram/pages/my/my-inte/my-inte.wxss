@@ -1,0 +1,51 @@
+/* miniprogram/pages/my/my-inte/my-inte.wxss */
+
+/* header开始 */
+.back{
+   float: left;
+   width: 40rpx;
+   height: 40rpx;
+   margin: 16rpx;
+}
+.info{
+   display: flex;
+   align-self: center;
+   margin-top: 16rpx;
+}
+.phone{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   
+}
+/* header结束 */
+/* main开始 */
+.photo{
+   align-self: center;
+}
+/* main结束 */
+/* 表格开始 */
+.table{
+   margin-top: 20rpx;
+   border: 2rpx solid #cccccc;
+   width: 100%;
+}
+.tr{
+   width: 100%;
+   display: flex;
+   justify-content:space-between ;
+   font-size: 28rpx;
+}
+.th{
+   font-weight: 900;
+   background: #f57004;
+   font-size: 28rpx;
+}
+.th,.td{
+   padding:20rpx ;
+   width: 100%;
+   font-size: 20rpx;
+   text-align: center;
+   border-bottom: 2rpx solid #cccccc;
+}
+/* 表格结束 */

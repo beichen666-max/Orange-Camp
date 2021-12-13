@@ -1,0 +1,144 @@
+{
+   "setting": {},
+   "condition": {
+      "plugin": {
+         "list": []
+      },
+      "game": {
+         "list": []
+      },
+      "gamePlugin": {
+         "list": []
+      },
+      "miniprogram": {
+         "list": [
+            {
+               "id": -1,
+               "name": "db guide",
+               "pathName": "pages/databaseGuide/databaseGuide",
+               "query": ""
+            },
+            {
+               "name": "首页",
+               "pathName": "pages/home/index/index",
+               "query": "",
+               "scene": null
+            },
+            {
+               "name": "营地信息",
+               "pathName": "pages/home/camp/camp",
+               "query": "",
+               "scene": null
+            },
+            {
+               "name": "寻找营地",
+               "pathName": "pages/home/findcamp/findcamp",
+               "query": "",
+               "scene": null
+            },
+            {
+               "name": "我的信息",
+               "pathName": "pages/my/my-info/my-info",
+               "query": "",
+               "scene": null
+            },
+            {
+               "name": "发布动态",
+               "pathName": "pages/publish/publish",
+               "query": "",
+               "scene": null
+            },
+            {
+               "name": "我的",
+               "pathName": "pages/my/mine/mine",
+               "query": "",
+               "scene": null
+            },
+            {
+               "name": "我的积分",
+               "pathName": "pages/my/my-inte/my-inte",
+               "query": "",
+               "scene": null
+            },
+            {
+               "name": "我的发布",
+               "pathName": "pages/my/my-release/my-release",
+               "query": "",
+               "scene": null
+            },
+            {
+               "name": "我的收藏",
+               "pathName": "pages/my/my-collect/my-collect",
+               "query": "",
+               "scene": null
+            },
+            {
+               "name": "常见问题",
+               "pathName": "pages/my/my-question/my-question",
+               "query": "",
+               "scene": null
+            },
+            {
+               "name": "关于我们",
+               "pathName": "pages/my/my-about/my-about",
+               "query": "",
+               "scene": null
+            },
+            {
+               "name": "草稿箱",
+               "pathName": "pages/my/my-drafts/my-drafts",
+               "query": "",
+               "scene": null
+            },
+            {
+               "name": "我的订单",
+               "pathName": "pages/my/my-order/my-order",
+               "query": "",
+               "scene": null
+            },
+            {
+               "name": "搜索",
+               "pathName": "pages/search/search",
+               "query": "",
+               "scene": null
+            },
+            {
+               "name": "租赁房车",
+               "pathName": "pages/home/rent/rent",
+               "query": "",
+               "scene": null
+            },
+            {
+               "name": "房车商城",
+               "pathName": "pages/home/shop/shop",
+               "query": "",
+               "scene": null
+            },
+            {
+               "name": "车友动态",
+               "pathName": "pages/home/dynamic/dynamic",
+               "query": "",
+               "scene": null
+            },
+            {
+               "name": "交友出行",
+               "pathName": "pages/home/friend/friend",
+               "query": "",
+               "scene": null
+            },
+            {
+               "name": "旅行攻略",
+               "pathName": "pages/home/travel-tips/travel-tips",
+               "query": "",
+               "scene": null
+            },
+            {
+               "name": "旅游详情",
+               "pathName": "pages/home/travel-info/travel-info",
+               "query": "",
+               "scene": null
+            }
+         ]
+      }
+   }
+}

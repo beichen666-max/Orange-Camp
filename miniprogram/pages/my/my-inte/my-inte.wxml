@@ -1,0 +1,93 @@
+<!--miniprogram/pages/my/my-inte/my-inte.wxml-->
+<!-- header开始 -->
+<view>
+   <a href="">
+      <image class="back" bindtap="gomy" src="/images4/back.png"></image>
+   </a>
+   <view>
+   <text class="info">我的积分</text>
+   </view>
+</view>
+<!-- header结束 -->
+<!-- main开始 -->
+<view class="phone">
+    <image class="userinfo-avatar" src="{{avatarUrl}}"></image>
+  </view>
+
+<!-- main结束 -->
+<!-- 表格开始 -->
+<view class="table">
+   <view class="tr">
+      <view class="th">用户行为</view>
+      <view class="th">经验值</view>
+      <view class="th">次数</view>
+   </view>
+   <view class="tr">
+      <view class="td">登录小程序</view>
+      <view class="td">+10分</view>
+      <view class="td">1次</view>
+   </view>
+   <view class="tr">
+      <view class="td">发布营地</view>
+      <view class="td">+6分</view>
+      <view class="td">5次</view>
+   </view>
+   <view class="tr">
+      <view class="td">评分、评论</view>
+      <view class="td">+2分</view>
+      <view class="td">10次</view>
+   </view>
+   <view class="tr">
+      <view class="td">分享</view>
+      <view class="td">+5分</view>
+      <view class="td">10次</view>
+   </view>
+   <view class="tr">
+      <view class="td">举报、纠错</view>
+      <view class="td">+3分</view>
+      <view class="td">5次</view>
+   </view>
+</view>
+
+<view class="table">
+   <view class="tr">
+      <view class="th">经验值</view>
+      <view class="th">等级</view>
+   </view>
+   <view class="tr">
+      <view class="td">0-20</view>
+      <view class="td">Lv1</view>
+   </view>
+   <view class="tr">
+      <view class="td">21-50</view>
+      <view class="td">Lv2</view>
+   </view>
+   <view class="tr">
+      <view class="td">51-100</view>
+      <view class="td">Lv3</view>
+   </view>
+   <view class="tr">
+      <view class="td">101-200</view>
+      <view class="td">Lv4</view>
+   </view>
+   <view class="tr">
+      <view class="td">201-500</view>
+      <view class="td">Lv5</view>
+   </view>
+   <view class="tr">
+      <view class="td">501-1000</view>
+      <view class="td">Lv6</view>
+   </view>
+   <view class="tr">
+      <view class="td">1001-5000</view>
+      <view class="td">Lv7</view>
+   </view>
+   <view class="tr">
+      <view class="td">5001-10000</view>
+      <view class="td">Lv8</view>
+   </view>
+</view>
+<!-- 表格结束 -->
+
+
+

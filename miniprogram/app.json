@@ -1,0 +1,78 @@
+{
+   "usingComponents": {
+      "van-search": "@vant/weapp/search/index",
+      "van-image": "@vant/weapp/image/index",
+      "van-icon": "@vant/weapp/icon/index",
+      "van-grid": "@vant/weapp/grid/index",
+      "van-grid-item": "@vant/weapp/grid-item/index",
+      "van-cell": "@vant/weapp/cell/index",
+      "van-cell-group": "@vant/weapp/cell-group/index",
+      "van-uploader": "@vant/weapp/uploader/index",
+      "van-tab": "@vant/weapp/tab/index",
+      "van-tabs": "@vant/weapp/tabs/index",
+      "van-progress": "@vant/weapp/progress/index",
+      "van-dropdown-menu": "@vant/weapp/dropdown-menu/index",
+      "van-dropdown-item": "@vant/weapp/dropdown-item/index",
+      "van-field": "@vant/weapp/field/index",
+      "van-switch": "@vant/weapp/switch/index",
+      "van-share-sheet": "@vant/weapp/share-sheet/index"
+   },
+   "pages": [
+      "pages/my/mine/mine",
+      "pages/home/index/index",
+      "pages/home/findcamp/findcamp",
+      "pages/home/publish/publish",
+      "pages/home/camp/camp",
+      "pages/my/my-info/my-info",
+      "pages/home/travel-tips/travel-tips",
+      "pages/my/my-inte/my-inte",
+      "pages/my/my-collect/my-collect",
+      "pages/my/my-order/my-order",
+      "pages/my/my-drafts/my-drafts",
+      "pages/my/my-question/my-question",
+      "pages/my/my-about/my-about",
+      "pages/search/search",
+      "pages/home/rent/rent",
+      "pages/home/shop/shop",
+      "pages/home/dynamic/dynamic",
+      "pages/home/friend/friend",
+      "pages/home/travel-info/travel-info"
+   ],
+   "permission": {
+      "scope.userLocation": {
+         "desc": "你的位置信息将用于小程序位置接口的效果展示"
+      }
+   },
+   "window": {
+      "backgroundColor": "#F6F6F6",
+      "backgroundTextStyle": "light",
+      "navigationBarBackgroundColor": "#ee7128",
+      "navigationBarTitleText": "“🍊车”营地",
+      "navigationBarTextStyle": "black"
+   },
+   "tabBar": {
+      "color": "#bfbfbf",
+      "selectedColor": "#f88105",
+      "list": [
+         {
+            "pagePath": "pages/home/index/index",
+            "text": "首页",
+            "iconPath": "images1/indexno.png",
+            "selectedIconPath": "images1/index.png"
+         },
+         {
+            "pagePath": "pages/home/findcamp/findcamp",
+            "text": "发现营地",
+            "iconPath": "images1/findcampno.png",
+            "selectedIconPath": "images1/findcampselect.png"
+         },
+         {
+            "pagePath": "pages/my/mine/mine",
+            "text": "我的",
+            "iconPath": "images1/myno.png",
+            "selectedIconPath": "images1/my.png"
+         }
+      ]
+   },
+   "sitemapLocation": "sitemap.json"
+}

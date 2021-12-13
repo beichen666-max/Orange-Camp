@@ -1,0 +1,18 @@
+/* miniprogram/pages/my/my-about/my-about.wxss */
+
+.box{
+   margin: 60rpx;
+   padding: 30rpx;
+   border: 4rpx solid #e95905;
+   border-radius: 10rpx;
+   font-size: 28rpx;
+
+}
+.box .title{
+   text-align: center;
+   margin-bottom: 16rpx;
+   font-size: 32rpx;
+   color: #e95905;
+
+
+}

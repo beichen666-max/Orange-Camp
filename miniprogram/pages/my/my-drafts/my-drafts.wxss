@@ -1,0 +1,23 @@
+/* miniprogram/pages/my/my-drafts/my-drafts.wxss */
+/* header开始 */
+.back{
+   float: left;
+   width: 40rpx;
+   height: 40rpx;
+   margin: 16rpx;
+}
+.info{
+   display: flex;
+   align-self: center;
+   margin-top: 16rpx;
+   
+}
+.wait{
+   color: #868686;
+   position: relative;
+   bottom: -450rpx;
+   right: -200rpx;
+   font-size: 40rpx;
+}
+
+/* header结束 */

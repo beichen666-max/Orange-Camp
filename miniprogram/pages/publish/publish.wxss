@@ -1,0 +1,120 @@
+/* miniprogram/pages/publish/publish.wxss */
+.back{
+  float: left;
+  width: 40rpx;
+  height: 40rpx;
+  margin: 16rpx;
+}
+
+.box{
+  display: flex;
+  justify-content: space-between;
+}
+
+.box button{
+  margin-top: 16rpx ;
+  margin-right: 16rpx;
+
+}
+
+input{
+  height: 100rpx;
+}
+.wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #ffffff;
+}
+.wrapper .only{
+  font-size: 28rpx;
+
+}
+.wrapper .icon-box{
+  display: flex;
+}
+.wrapper .icon-box-img{
+  margin-left: 30rpx;
+  margin-right: 10rpx;
+  position: relative;
+  bottom: -4rpx;
+}
+
+.img-box .img-close{
+  width: 100rpx;
+  height: 100rpx;
+}
+/* 测试版本1.0开始 */
+label{
+  border:0.5rpx solid #bfbfbf;
+  background: #ffffff;
+}
+.check{
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: space-around; */
+}
+
+.check label{
+  width: 183.5rpx;
+  height: 144rpx;
+  border-radius: 10rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.is_checked{
+  color: #f88105;
+  border: 0.5rpx solid #f88105;
+}
+.is_checked>checkbox{
+  color: red;
+}
+.select{
+  width: 50rpx;
+  height: 50rpx;
+
+}
+
+/* 添加图片 */
+.img-box{
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+  /* justify-content: space-evenly; */
+  height: 250rpx;
+  border-top: 6rpx solid #efefef;
+  
+}
+
+.add{
+  height: 180rpx;
+  width: 180rpx;
+  margin-right: 20rpx;
+}
+.img-close{
+  height: 250rpx;
+  width: 250rpx;
+  margin: 30rpx;
+  margin-left: 10rpx;
+  
+}
+/* 删除选择图片（叉号部分） */
+.close{
+  position: absolute;
+  width: 50rpx;
+  height: 50rpx;
+  left: 168rpx;
+  top: -25rpx;
+}
+
+
+/* 营地信息 */
+.content{
+  display: flex;
+  justify-content: space-between;
+}
+.left{
+  margin: 15px;
+}

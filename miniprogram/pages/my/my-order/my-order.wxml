@@ -1,0 +1,14 @@
+<!--miniprogram/pages/my/my-order/my-order.wxml-->
+<!-- header开始 -->
+<view>
+   <a href="">
+      <image class="back" bindtap="gomy" src="/images4/back.png"></image>
+   </a>
+   <view>
+   <text class="info">我的订单</text>
+   </view>
+</view>
+<view class="wait"> 
+   该页面功能待开发
+</view>
+<!-- header结束 -->

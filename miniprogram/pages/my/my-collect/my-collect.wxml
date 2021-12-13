@@ -1,0 +1,11 @@
+<!--miniprogram/pages/my/my-collect/my-collect.wxml-->
+<!-- header开始 -->
+<view>
+   <a href="">
+      <image class="back" bindtap="gomy" src="/images4/back.png"></image>
+   </a>
+   <view>
+   <text class="info">我的收藏</text>
+   </view>
+</view>
+<!-- header结束 -->

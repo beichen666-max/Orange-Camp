@@ -1,0 +1,17 @@
+<!--miniprogram/pages/my/my-about/my-about.wxml-->
+<view class="wrapper">
+   <view class="box">
+      <view class="title">关于“🍊车”营地V1.0</view>
+      <view>
+         “🍊车”营地是集数据查询，动态发布，交友出行等模块于一体的小程序。
+      帮助自驾游，房车车友等用户寻找营地，从而解决房车的停靠问题，排污问题，安全问题，水电问题等
+      </view>
+      <view>“🍊车”营地V1.0由陈一航、贾辰宇合力开发</view>
+      <view>UI来源：Vant Weapp</view>
+      <view>
+      感谢小程序V1.0上线前，以下申请体验者的宝贵意见：范耀豪，滕瑞达，付虹凯，李渊博，徐伟东，王朝涛，韩承润，刘睿稳，韦修志，陈子涵
+      同时，产品目前属于个人运营。如果您希望对我们的产品提出支持或者联系我们，可以联系邮箱:</view>
+      <view>Email：1563196747@qq.com </view>
+   </view>
+</view>
+

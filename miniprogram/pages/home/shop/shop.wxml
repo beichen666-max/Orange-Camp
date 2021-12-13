@@ -1,0 +1,80 @@
+<!--miniprogram/pages/home/shop/shop.wxml-->
+<view>
+   <a href="">
+      <image class="back" bindtap="goindex" src="/images4/back.png"></image>
+   </a>
+   <view>
+   <text class="info">房车商城</text>
+   </view>
+</view>
+
+<!-- 产品区 -->
+<view class="products">
+<!-- 第一个产品 -->
+<view class="product">
+  <image src="cloud://cloud1-1g0683vye29ecd9b.636c-cloud1-1g0683vye29ecd9b-1305369412/shoplist/米家充气宝.jpg"></image>
+  <!-- 介绍区域 -->
+  <view class="info-box">
+    <view class="title">米家充气宝</view>
+    <view class="infolist">数字胎压监测，便携</view>
+    <view class="price">￥167</view>
+
+  </view>
+</view>
+<!-- 第二个产品 -->
+<view class="product">
+  <image src="cloud://cloud1-1g0683vye29ecd9b.636c-cloud1-1g0683vye29ecd9b-1305369412/shoplist/遮阳板挂钩.jpg"></image>
+  <!-- 介绍区域 -->
+  <view class="info-box">
+    <view class="title">房车遮阳棚挂钩</view>
+    <view class="infolist">简约便携，方便实用</view>
+    <view class="price">￥10</view>
+      
+  </view>
+</view>
+<!-- 第三个产品 -->
+<view class="product">
+  <image src="cloud://cloud1-1g0683vye29ecd9b.636c-cloud1-1g0683vye29ecd9b-1305369412/shoplist/水温水位表.jpg"></image>
+  <!-- 介绍区域 -->
+  <view class="info-box">
+    <view class="title">两路水位表液位</view>
+    <view class="infolist">智能高效</view>
+    <view class="price">￥700</view>
+      
+  </view>
+</view>
+<!-- 第四个产品 -->
+<view class="product">
+  <image src="cloud://cloud1-1g0683vye29ecd9b.636c-cloud1-1g0683vye29ecd9b-1305369412/shoplist/快接出水口.jpg"></image>
+  <!-- 介绍区域 -->
+  <view class="info-box">
+    <view class="title">房车改装配件</view>
+    <view class="infolist">快接加水，水量可调</view>
+    <view class="price">￥24-120</view>
+      
+  </view>
+</view>
+<!-- 第五个产品 -->
+<view class="product">
+  <image src="cloud://cloud1-1g0683vye29ecd9b.636c-cloud1-1g0683vye29ecd9b-1305369412/shoplist/后置自行车架.jpg"></image>
+  <!-- 介绍区域 -->
+  <view class="info-box">
+    <view class="title">后置支架</view>
+    <view class="infolist">铝合金材料，可调尺寸</view>
+    <view class="price">￥1108</view>
+      
+  </view>
+</view>
+<!-- 第六个产品 -->
+<view class="product">
+  <image src="cloud://cloud1-1g0683vye29ecd9b.636c-cloud1-1g0683vye29ecd9b-1305369412/shoplist/油烟机.jpg"></image>
+  <!-- 介绍区域 -->
+  <view class="info-box">
+    <view class="title">房车12V车载油烟机</view>
+    <view class="infolist">创新技术，更加震撼</view>
+    <view class="price">￥649</view>
+      
+  </view>
+</view>
+
+</view>

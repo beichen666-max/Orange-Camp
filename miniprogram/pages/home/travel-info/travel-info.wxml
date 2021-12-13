@@ -1,0 +1,16 @@
+<!--miniprogram/pages/home/findcamp/camp/camp.wxml-->
+<!-- img从travellist里面取 -->
+<view class="camp-information">
+  <van-image 
+  width="100%"
+  height="200px"
+  fit="aspectFit" 
+  src="{{travel.img}}"
+  />
+
+<view >
+  <view class="info1">信息介绍</view> 
+   <view class="info2">{{travel.info}}</view>
+</view>
+
+</view>

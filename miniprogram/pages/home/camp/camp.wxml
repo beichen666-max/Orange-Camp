@@ -1,0 +1,67 @@
+<!--miniprogram/pages/home/findcamp/camp/camp.wxml-->
+<view class="camp-information">
+  <van-image 
+  width="100%"
+  height="200px"
+  fit="aspectFit" 
+  src="{{info.img}}"
+  />
+    <!-- 地图开始 -->
+    <view>
+      <map name="map" latitude="{{info.latitude}}" longitude="{{info.longitude}}"  
+        scale="12" markers="{{markers}}" 
+        bindmarkertap="markertap" bindregionchange="regionchange" 
+        style="width:100%;height:100px" bindtap="moveCenter">
+      </map>
+    </view>
+  <!-- 地图结束 -->
+  <!-- 营地文字信息开始 -->
+  <van-cell-group>
+  <van-cell icon="info-o" title="营地" value="{{info.title}}" />
+  <van-cell icon="location-o" title="地点" value="{{info.addr}}" />
+  <van-cell icon="flower-o" title="体验" value="{{info.content}}" />
+
+</van-cell-group>
+
+  <!-- 营地文字信息结束 -->
+
+  <!-- 导航选择开始 -->
+
+<view>
+  <checkbox-group name="checkbox" class="check">
+    <label for="" wx:for="{{checks}}" wx:key="{{checks}}" wx:for-index="index" data-index="{{index}}"
+      class='{{item.checked?"is_checked":""}}'>
+      <checkbox value="{{item.name}}" data-val="{{item.name}}" hidden='false' checked='{{item.checked}}' />{{item.name}}
+      <!-- 判断条件为true和false  位置在js的checked中 -->
+      <block wx:if="{{item.checked}}">
+        <image class="select" src="{{item.url1}}"></image>
+      </block>
+      <block wx:else>
+        <image class="select" src="{{item.url2}}"></image>
+      </block>
+    </label>
+  </checkbox-group>
+</view>
+
+        <!-- 评分开始 -->
+        <view class="score">
+        <view class="style">
+        评分:
+      </view>
+      <view class="style">
+        <van-rate value="{{ value }}" bind:change="onChange" />
+      </view>
+      </view>
+        <!-- 评分结束 -->
+      <view class="foot"></view>
+
+
+        <!-- 下方导航开始 -->
+        <van-goods-action>
+            <van-goods-action-icon open-type='feedback' icon="/images4/report.png" text="纠正" />
+            <van-goods-action-icon icon="/images4/collect.png" text="收藏" info="" />
+            <van-goods-action-icon open-type='share' icon="/images4/share.png" text="推荐" />
+            <van-goods-action-button bindtap="navigate" color="#f88105" text="出发去这" />
+         </van-goods-action>
+         <!-- 下方导航结束 -->
+</view>

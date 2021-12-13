@@ -1,0 +1,18 @@
+<!--miniprogram/pages/my/my-question/my-question.wxml-->
+<!--miniprogram/pages/my/my-about/my-about.wxml-->
+<view class="wrapper">
+   <view class="box">
+      <view class="title">“🍊车”问题</view>
+      <view>
+         🍊1.定位问题：地图当前位置可能会出现定位偏差
+      </view>
+      <view>
+         🍊2.发布问题：发布照片时可能出现无法上传或删除问题
+      </view>
+      <view>
+         🍊3.登录问题
+      </view>
+   </view>
+</view>
+
+

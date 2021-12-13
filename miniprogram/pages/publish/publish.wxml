@@ -1,0 +1,59 @@
+<!--miniprogram/pages/publish/publish.wxml-->
+<!-- 发布 -->
+<view class="box">
+  <view>
+    <a href="">
+      <image class="back" bindtap="goindex" src="/images4/back.png"></image>
+   </a>
+  </view>
+  <view>
+    <button type="primary" size="mini" bindtap="publish">发布</button>
+  </view>
+</view>
+<input type="text" value="{{inpVal}}" bindinput="getVal" placeholder="请输入..."/>
+
+<!-- 上传图片 -->
+<view class="img-box">
+  <view class="img-close">
+    <image class="add" bindtap="selectimgOne"  mode='aspectFill' src="{{addImgOne}}"></image>
+    <image class="close" bindtap="deleteOne"  wx:if="{{oneClose && !imgNum}}" src="/images1/false.png"></image>
+  </view>
+ <view class="img-close">
+    <image class="add" wx:if="{{activeTwo}}" bindtap="selectimgTwo"  mode='aspectFill' src="{{addImgTwo}}"></image>
+    <image class="close" bindtap="deleteTwo"  wx:if="{{twoClose && imgNum==0}}" src="/images1/false.png"></image>
+ </view>
+  <view class="img-close">
+    <image class="add" wx:if="{{activeThree}}" bindtap="selectimgThree"  mode='aspectFill' src="{{addImgThree}}"></image>
+    <image class="close" bindtap="deleteThree" wx:if="{{threeClose && imgNum==0}}" src="/images1/false.png"></image>
+  </view>
+</view>
+<!-- 选择营地环境1.0开始 -->
+<view>
+  <checkbox-group name="checkbox" class="check">
+    <label for="" bindtap="clicks" wx:for="{{checks}}" wx:key="{{checks}}" wx:for-index="index" data-index="{{index}}" data-item="{{item}}"
+      class='{{item.checked?"is_checked":""}}'>
+      <checkbox value="{{item.name}}" data-val="{{item.name}}" hidden='false' checked='{{item.checked}}' />{{item.name}}
+      <block wx:if="{{item.checked}}">
+        <image class="select" src="{{item.url1}}"></image>
+      </block>
+      <block wx:else>
+        <image class="select" src="{{item.url2}}"></image>
+      </block>
+    </label>
+  </checkbox-group>
+</view>
+<!-- 选择营地环境1.0结束 -->
+
+<view class="content">
+  <view class="left"><van-icon name="info-o"/><text>  营地  :</text></view>
+  <input class="right" type="text" value="{{title1}}" bindinput="title1" placeholder="请输入营地名称"/>
+</view>
+<view class="content">
+  <view class="left"><van-icon name="location-o"/><text>  地点  :</text></view>
+  <input class="right" type="text" value="{{addr}}" bindinput="addr1" placeholder="请输入地址"/>
+</view>
+<view class="content">
+  <view class="left"><van-icon name="phone-o"/><text>  电话  :</text></view>
+  <input class="right" type="text" value="{{tel}}" bindinput="tel1" placeholder="请输入营地名称"/>
+</view>
+

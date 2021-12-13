@@ -1,0 +1,16 @@
+/* miniprogram/pages/my/my-collect/my-collect.wxss */
+/* header开始 */
+.back{
+   float: left;
+   width: 40rpx;
+   height: 40rpx;
+   margin: 16rpx;
+}
+.info{
+   display: flex;
+   align-self: center;
+   margin-top: 16rpx;
+   
+}
+
+/* header结束 */

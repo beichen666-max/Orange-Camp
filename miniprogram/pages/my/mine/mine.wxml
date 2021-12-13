@@ -1,0 +1,41 @@
+<!-- 个人信息 -->
+<view class="login">
+  <!-- 插入背景图片开始 -->
+  <view class="content">
+    <image class="background" src="/images4/bg.jpg" mode="aspectFill" ></image>
+  </view>
+  <!-- 插入背景图片结束 -->
+  <view class="phone">
+    <image class="userinfo-avatar" src="{{avatarUrl}}"></image>
+  </view>
+  <view class="name">{{ userInfo.nickName || 'hello,小可爱'}}</view>
+  <view class="btn">
+    <button wx:if="{{!hasUserInfo}}" bindtap="getUserProfile" type="primary" size="mini">登录</button>
+  </view>
+</view>
+<!-- 导航栏 -->
+<view class="box">
+<van-grid column-num="3">
+  <van-grid-item icon="/images3/release.png" link-type="reLaunch" url="/pages/my/my-release/my-release" text="我的发布" />
+  <van-grid-item icon="/images3/collect.png" link-type="reLaunch" url="/pages/my/my-collect/my-collect" text="我的收藏" />
+  <van-grid-item icon="/images3/info.png" link-type="reLaunch" url="/pages/my/my-info/my-info" text="修改信息" />
+  <van-grid-item icon="/images3/inte.png" link-type="reLaunch" url="/pages/my/my-inte/my-inte" text="我的积分" />
+  <van-grid-item icon="/images3/order.png" link-type="reLaunch" url="/pages/my/my-order/my-order" text="我的订单" />
+  <van-grid-item icon="/images3/drafts.png" link-type="reLaunch" url="/pages/my/my-drafts/my-drafts" text="草稿箱" />
+</van-grid>
+</view>
+
+
+<!-- 小程序反馈 -->
+<view class="back">
+    <!-- 意见反馈按钮只有真机测试时可以跳转 -->
+    <button class="button1" open-type="feedback">
+    <view class="feedback">
+       <view class="style1">意见反馈</view>
+       <!-- <view class="style2">></view> -->
+       <image class="big" src="/images4/big.png"></image>
+    </view>
+  </button>
+  <van-cell is-link title="常见问题" link-type="navigateTo" url="/pages/my/my-question/my-question" />
+  <van-cell is-link title="关于我们" link-type="navigateTo" url="/pages/my/my-about/my-about" />
+</view>

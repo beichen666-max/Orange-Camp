@@ -1,0 +1,32 @@
+/* miniprogram/pages/home/findcamp/findcamp.wxss */
+/* main开始 */
+.box-body{
+   background: #ffffff;
+   display: flex;
+   margin: 4rpx 0;
+}
+.photo .camp{
+   width: 160rpx;
+   height: 160rpx;
+   margin: 10rpx;
+}
+.box-body .info .info1{
+   margin-top: 4rpx;
+}
+.box-body .info .info2{
+   font-size: 24rpx;
+   margin: 4rpx 0;
+   color: #000000ad;
+}
+.box-body .info .info3{
+   font-size: 25rpx;
+   margin: 0 8rpx;
+   padding: 0 24rpx;
+   color: #fa3706;
+   background: #f3b860a6;
+}
+.box-body .info .info4{
+   margin-top: 10rpx;
+   font-size: 24rpx;
+}
+/* main结束 */

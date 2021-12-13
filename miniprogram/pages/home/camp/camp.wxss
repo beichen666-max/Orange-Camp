@@ -1,0 +1,74 @@
+/* miniprogram/pages/home/findcamp/camp/camp.wxss */
+.camp-information{
+  height: 300rpx;
+  width: 100%;
+}
+.footer{
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+}
+.score{
+  background: #ffffff;
+  margin:4rpx 0 ;
+  height: 80rpx;
+  display: flex;
+  align-items: center;
+}
+.style{
+  margin-left: 20rpx;
+}
+
+label{
+  border:1rpx solid #bfbfbf;
+  background: #ffffff;
+}
+.check{
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: space-around; */
+}
+
+.check label{
+  width: 183.5rpx;
+  height: 144rpx;
+  border-radius: 10rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.is_checked{
+  color: #f88105;
+  border: 2rpx solid #f88105;
+}
+.is_checked>checkbox{
+  color: red;
+}
+.select{
+  width: 50rpx;
+  height: 50rpx;
+
+}
+
+
+
+/* 评论开始 */
+.comment{
+  height: 500rpx;
+  background: #ffffff;
+  display: flex;
+  justify-content: space-between;
+}
+.comment .text{
+  margin-left: 20rpx;
+  padding-top:10rpx;
+}
+.btn{
+  margin-right: 20rpx;
+  padding-top: 10rpx;
+}
+
+.foot{
+  height: 200px;
+}

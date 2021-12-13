@@ -1,0 +1,29 @@
+<!--miniprogram/pages/home/dynamic/dynamic.wxml-->
+<view>
+   <a href="">
+      <image class="back" bindtap="goindex" src="/images4/back.png"></image>
+   </a>
+   <view>
+   <text class="info">车友动态</text>
+   </view>
+</view>
+<view class="all">
+  <view wx:for="{{dylist}}" wx:key="id" class="wapper">
+    <view class="top">
+      <view class="left">
+        <van-image round width="4rem" height="4rem" fit="cover" src="{{item.img0}}"/>
+        <view>
+         <view><text>{{item.name}}</text></view>
+         <view><text>{{item.time}}</text></view>
+        </view>
+      </view>
+      <view class="right">{{item.id}}</view>
+    </view>
+    <view class="text">{{item.text}}</view>
+    <view class="img">
+      <van-image width="7.3rem" height="7.3rem" fit="cover" src="{{item.img[0]}}"/>
+      <van-image width="7.3rem" height="7.3rem" fit="cover" src="{{item.img[1]}}"/>
+      <van-image width="7.3rem" height="7.3rem" fit="cover" src="{{item.img[2]}}"/>
+    </view>
+  </view>
+</view>

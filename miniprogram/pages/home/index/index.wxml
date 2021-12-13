@@ -1,0 +1,70 @@
+<!-- // 在页面search.wxml中，定义一个input输入框以及搜索的点击按钮，
+    // 分别为它们绑定点击事件handleInputChange()和handleSearch()的事件，
+    // 同时在它们的下面定义搜索的列表，代码如下所示： -->
+    <van-search
+  value="{{ value }}"
+  placeholder="请输入关键字 如大连"
+  shape="round"
+  use-action-slot
+  bindtap="gosearch"
+>
+  <view slot="action" bindtap="gosearch" >搜索</view>
+</van-search>
+
+<!-- <view>
+  <view wx:for="{{list}}" wx:key="{{index}}" class="item" id="{{item.id}}" bindtap="handleItemTap">
+    <view>{{ item }}</view>
+    <view class="item-message">{{ item.message }}</view>
+  </view>
+</view> -->
+<!-- input-align="center" 文字居中-->
+<!-- background="#4fc08d" 设置颜色 -->
+
+<!-- 轮播区 -->
+<!-- screen-swiper square-dot shadow-warp bg-white -->
+<swiper 
+class="screen-swiper square-dot shadow-warp bg-white" 
+indicator-dots="true" circular="true" 
+autoplay="true" interval="5000"  
+duration="500" >
+<!-- bindchange="swiperchange" -->
+    <swiper-item wx:for="{{swiperlist}}" wx:key="id1">
+        <image class="swiper-img" src="{{item.url}}" mode='aspectFill' bindtap="swipclick"></image>
+    </swiper-item>
+</swiper>
+
+<!-- 头条滚动区域 -->
+<swiper class="swiperitem margin-top solid-bottom" autoplay="true" vertical="true" circular="true" >
+    <!-- bindchange="lineschange" -->
+    <block wx:for="{{Headlines}}" wx:key="id2">
+        <swiper-item  bindtap="linesclick">
+            <view class="cu-bar bg-white">
+                <view class='action'>
+                    <text class='icon-title text-green'></text>
+                    <text>{{item.title}}</text>
+                </view>
+            </view>
+        </swiper-item>
+    </block>
+</swiper>
+
+<!-- 导航栏 -->
+<van-grid column-num="3">
+ <a href=""><van-grid-item icon="/images1/orange.png" link-type="reLaunch"
+    url="/pages/publish/publish" text="发布营地"/></a>
+ <a href=""><van-grid-item icon="/images1/travel.png" link-type="reLaunch"
+    url="/pages/home/travel-tips/travel-tips" text="旅行功略"/></a>
+ <a href=""><van-grid-item icon="/images1/friend.png" link-type="reLaunch"
+    url="/pages/home/friend/friend" text="交友出行"/></a>
+ <a href=""><van-grid-item icon="/images1/buycar.png" link-type="reLaunch"
+    url="/pages/home/rent/rent" text="租赁房车"/></a>
+ <a href=""><van-grid-item icon="/images1/shop.png" link-type="reLaunch"
+    url="/pages/home/shop/shop" text="房车商城"/></a>
+ <a href=""><van-grid-item icon="/images1/cardynamic.png" link-type="reLaunch"
+    url="/pages/home/dynamic/dynamic" text="车友动态"/></a>
+</van-grid>
+<!-- 房车展示区 -->
+<view><a href=""><image class="style1" src="cloud://cloud1-1g0683vye29ecd9b.636c-cloud1-1g0683vye29ecd9b-1305369412/swiper/active4.jpg"></image></a></view>
+<view><a href=""><image class="style1" src="cloud://cloud1-1g0683vye29ecd9b.636c-cloud1-1g0683vye29ecd9b-1305369412/swiper/active3.jpg"></image></a></view>
+
+

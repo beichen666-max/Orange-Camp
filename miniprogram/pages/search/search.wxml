@@ -1,0 +1,57 @@
+<!-- 搜索框 -->
+<view class="top">
+  <view class="topsearch">
+    <view class="frame">
+    <!-- 绑定输入事件 -->
+      <input value="{{camptext}}" bindinput="searchinput"></input>
+    </view>
+    <!-- 绑定搜索事件 -->
+    <text bindtap="search">搜索</text>
+  </view>
+</view>
+
+
+
+<!-- 历史记录 判断如果历史记录 -->
+<view class="history" wx:if="{{history}}">
+  <view class="history_title">
+    <text>历史搜索</text>
+    <!-- 删除的图标 绑定清除历史记录事件 -->
+    <image src="/images1/buycar.png" mode="widthFix" style="width:5%;" bindtap="cleanhistory"></image>
+  </view>
+  <!-- 历史记录的文本 循环newArray 绑定文本复制事件 -->
+  <view class="history_text">
+    <text wx:for="{{newArray}}" wx:key="key" data-text="{{item}}" bindtap="textfz">{{item}}</text>
+  </view>
+</view>
+
+
+
+
+<!-- 如果搜索不到显示 判断如果noneview -->
+<view class="none" wx:if="{{noneview}}">
+  <!-- 搜索不到显示的图片 -->
+  <image src="/images1/buycar.png" mode="widthFix" style="width:20%"></image>
+  <text>抱歉，没有相关营地信息</text>
+</view>
+
+
+
+
+<!-- 显示搜索到的内容 -->
+<view wx:if="{{camplist}}">
+  <!-- <view wx:for="{{infolist}}" wx:key="id" wx:if='{{item.status=="1"?true:false}}'> -->
+  <view wx:for="{{infolist}}" wx:key="_id" bindtap="goinfo" data-idp="{{item}}" class="box-body">
+    <view class="photo">
+      <a href="">
+        <image class="camp" src="{{item.img}}" mode="heightfix" data-status="{{item.status}}"></image>
+      </a>
+    </view>
+    <view class="info">
+      <view class="info1">{{item.title}}</view>
+      <view class="info2">{{item.content}}</view>
+      <text class="info3">{{item.contain1}}</text> <text class="info3">{{item.contain2}}</text>
+      <view class="info4">{{item.mark}}</view>
+    </view>
+  </view>
+</view>

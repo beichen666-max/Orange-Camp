@@ -1,0 +1,58 @@
+/* miniprogram/pages/home/rent/rent.wxss */
+.back{
+   float: left;
+   width: 40rpx;
+   height: 40rpx;
+   margin: 16rpx;
+}
+.info{
+   display: flex;
+   align-self: center;
+   margin-top: 16rpx;
+   
+}
+
+
+.box-body{
+   background: #ffffff;
+   display: flex;
+   margin: 4rpx 0;
+}
+.photo .camp{
+   width: 160rpx;
+   height: 160rpx;
+   margin: 10rpx;
+}
+.box-body .infolist .info1{
+   margin-top: 4rpx;
+}
+.box-body .infolist .info2{
+   font-size: 24rpx;
+   margin: 4rpx 0;
+   color: #000000ad;
+}
+.box-body .infolist .info3{
+   font-size: 25rpx;
+   margin: 0 8rpx;
+   padding: 0 24rpx;
+   color: #fa3706;
+   background: #f3b860a6;
+}
+.box-body .infolist .info4{
+font-size: 24rpx;
+color: rgb(4, 210, 247);
+border: 1px solid rgb(205, 205, 235);
+margin-top:10rpx ;
+padding: 4rpx;
+width: 100rpx;
+}
+.box-body .infolist .info5{
+   margin-top: 10rpx;
+   font-size: 24rpx;
+}
+.box-body .infolist .bottom{
+   display: flex;
+   justify-content: space-between;
+   width: 550rpx;
+}
+

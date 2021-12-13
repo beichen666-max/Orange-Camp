@@ -1,0 +1,38 @@
+/* miniprogram/pages/home/friend/friend.wxss */
+.page{
+   background-color: #ffffff;
+ }
+ .back{
+   float: left;
+   width: 40rpx;
+   height: 40rpx;
+   margin: 16rpx;
+ }
+ .info{
+   display: flex;
+   align-self: center;
+   margin-top: 16rpx;
+ }
+ 
+ .all{
+   background: #ffffff;
+ }
+ 
+ .wapper{
+   border-bottom: 2px solid #bfbfbf;
+ 
+ }
+ 
+ .top{
+   display: flex;
+   justify-content: space-between;
+   padding: 0 18rpx;
+   padding-top: 20rpx;
+ }
+ .text{
+   padding: 0 30rpx;
+ }
+ 
+ .left{
+   display: flex;
+ }

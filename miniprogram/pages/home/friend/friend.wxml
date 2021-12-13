@@ -1,0 +1,29 @@
+<!--miniprogram/pages/home/friend/friend.wxml-->
+<view>
+    <a href="">
+      <image class="back" bindtap="goindex" src="/images4/back.png"></image>
+   </a>
+   <view>
+   <text class="info">交友出行</text>
+   </view>
+  </view>
+
+
+<view class="all">
+  <view wx:for="{{friendlist}}" wx:key="_id" class="wapper">
+    <view class="top">
+      <view class="left">
+        <van-image round width="4rem" height="4rem" fit="cover" src="{{item.img}}"/>
+        <text>{{item.name}}</text>
+      </view>
+      <view class="right">{{item.time}}</view>
+    </view>
+    <text class="text">{{item.text}}</text>
+    <van-cell-group>
+    <van-cell icon="info-o" title="时间" value="{{item.day}}" />
+    <van-cell icon="location-o" title="地点" value="{{item.site}}" />
+    <van-cell icon="flower-o" title="约伴要求" value="{{item.require}}" />
+    <van-cell icon="gold-coin-o" title="免费资源" value="{{item.resource}}" />
+    </van-cell-group>
+  </view>
+</view>

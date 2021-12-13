@@ -1,0 +1,32 @@
+/* miniprogram/pages/my/my-info/my-info.wxss */
+/* header开始 */
+.back{
+   float: left;
+   width: 40rpx;
+   height: 40rpx;
+   margin: 16rpx;
+}
+.info{
+   display: flex;
+   align-self: center;
+   margin-top: 16rpx;
+   
+}
+.note{
+   font-size: 16rpx;
+   position: relative;
+   left: -40rpx;
+}
+/* header结束 */
+/* main开始 */
+/* main结束 */
+/* button开始 */
+.button{
+   position: relative;
+   top: 40rpx;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   
+}
+/* button结束 */
